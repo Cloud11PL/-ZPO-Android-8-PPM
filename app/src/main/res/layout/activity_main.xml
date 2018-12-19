@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chooseSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sex" />
+
+        <Spinner
+            android:id="@+id/sex_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:entries="@array/sex_choice"/>
+
+        <TextView
+            android:id="@+id/giveHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/giveWeight" />
+
+        <EditText
+            android:id="@+id/weightEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/weight" />
+
+        <TextView
+            android:id="@+id/giveWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/givHeight"/>
+
+        <EditText
+            android:id="@+id/heightEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/height" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_birthday"
+            android:onClick="choose_birth_date"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PPM_type"/>
+
+        <Spinner
+            android:id="@+id/PPM_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:entries="@array/PPM_type"/>
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:onClick="calculateData"/>
+
+        <TextView
+            android:id="@+id/results_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/results_text" />
+
+        <TextView
+            android:id="@+id/calculated_results_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:text="" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Calculate PPM</string>
+    <string name="sex">Pick your sex:</string>
+    <string name="giveSex">...</string>
+    <string name="giveWeight">Weight:</string>
+    <string name="weight">Weight... [kg]</string>
+    <string name="height">Height... [cm]</string>
+    <string name="givHeight">Height:</string>
+    <string name="choose_birthday">Pick your birthday</string>
+    <string name="PPM_type">Choose PPM type</string>
+    <string name="calculate_bttn">Calculate!</string>
+    <string name="results_text">Here are your results:</string>
+    <string-array name="PPM_type">
+        <item>Harris-Benedict Method</item>
+        <item>Mifflin Method</item>
+    </string-array>
+    <string-array name="sex_choice">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>
